@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+  background-color: #bba58f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 780px;
+  padding: 20px;
+  background-color: #a88e7a;
+  border-radius: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: for a border effect */
+}
+
+.quiz-wrapper {
+padding: 2 rem;
+color: #fff;
+text-align: center;
+}
+
+.quiz-wrapper h2 {
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
+.quiz-wrapper h3 {
+font-size: 2rem;
+
+}
+
+.btn{
+  outline: none;
+  border: none;
+  background-color: #3a2d28;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.quiz-wrapper p {
+  margin: 1rem 0;
+}
+
