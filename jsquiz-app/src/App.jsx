@@ -1,39 +1,45 @@
 import React, { useEffect, useReducer } from "react";
 import { quizQuestions } from "./questions";
+import StartScreen from "./Components/StartScreen";
+import QuizStart from "./Components/QuizStart";
 
-function reducer(state, action ){
-  switch(action.type){
-    case "data-recieved" : 
+function reducer(state, action) {
+  switch (action.type) {
+    case "data-received" : 
     return {...state, questions : action.payload, status: "ready"};
+    case "active": 
+      return {...state, status: "active" };
   }
 }
 
 const initialstates = {
   questions : [],
-  status: "loading"
-}
+  status: "loading",
+  index: 0,
+};
 
 function App() {
-  const [{status, questions}, dispatch] = useReducer(reducer, initialstates);
-  useEffect( function() {
+  const [{status, questions, index }, dispatch] = useReducer(
+    reducer, 
+    initialstates,
+  );
+
+  useEffect( function () {
     if (quizQuestions) {
-    dispatch({type: "data-recieved", payload: quizQuestions})
+    dispatch({ type: "data-received", payload: quizQuestions })
     }
   },[])
 
+  
+
   return (
   <main className="container">
-    <div className="quiz-wrapper">
-      <h2>Welcome to</h2>
-      <h3>Academia Code Trials!</h3>
-      <p>Number of Questions : 0</p>
-      <p>Total Points : 0</p>
-      <button className="btn">Let's Do This!</button>
+    {status === "ready" && <StartScreen dispatch={dispatch} />}
+    {status === "active" && (
+      <QuizStart questions={questions[index]} dispatch={dispatch} />
+    )}
 
-
- </div>
-  </main>
- 
+    </main>
   );
 }
 
