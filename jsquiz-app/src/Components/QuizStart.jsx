@@ -1,23 +1,38 @@
 import React from "react";
+import FooterContent from "./FooterContent";
 
-function QuizStart({ questions }) {
-    
+function QuizStart({ dispatch, questions, totalQuestions, index, answer }) {
+    const hasAnswer = answer   !== null;
+
     return (
     <div className="quiz">
         <div className="quiz_header">
             <h2>{questions.question}</h2>
         </div>
         <div className="quiz_body">
-            {questions.options.map((option)=>(
-                <li key={option}>{option}</li>
+            {questions.options.map((option, index) => (
+                <li 
+                key={option} 
+                onClick={() => dispatch({ type: "newAnswer", payload: index })}
+                className={`${
+                    hasAnswer 
+                    ? index === questions.correctOptions 
+                    ? "correct" 
+                    : "wrong" 
+                    : ""
+                    }`}>
+                {option}</li>
             ))}
             
         </div>
         <div className="quiz_footer">
-            <p>Number of Questions 0 / 15</p>
-            <button className="btn">Next</button>
+            <p>Number of Questions : {index} / {totalQuestions} 
+            </p>
+            <FooterContent dispatch={dispatch} 
+            index={index} 
+            totalQuestions={totalQuestions}/>
+            </div>
         </div>
-    </div>
     );
 }
 export default QuizStart;
