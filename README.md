@@ -5,7 +5,7 @@ These are beginner friendly questions and will help you further<br>
 your knowledge to become a great programmer!
 
 &nbsp;
-![Start Screen](startscreen-quiz.png)
+![Start Screen](docs/startscreen-quiz.png)
 &nbsp;
 
 ##Functionality
