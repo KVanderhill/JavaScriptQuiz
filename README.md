@@ -1,1 +1,18 @@
-#Academia Code Trials
+# Academia Code Trials
+This quiz is a web-based game that tests your knowledge in JavaScript.<br>
+Allows users to see what they really know in JavaScript!<br>
+These are beginner friendly questions and will help you further<br>
+your knowledge to become a great programmer!
+
+&nbsp;
+![Start Screen](startscreen-quiz.png)
+&nbsp;
+
+##Functionality
+Interactive quiz: Users can answer multiple choice questions.
+Score Tracking: Points are awarded for correct answers.
+Restart Functionality: Users can restart the game.
+&nbsp;
+
+##Play the Game
+Access the game [Here]
