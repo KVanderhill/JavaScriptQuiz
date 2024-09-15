@@ -1,0 +1,8 @@
+Issues faced during quiz creation:
+
+Small mistakes- incorrect spelling
+Ensuring all naming conventions matched across each of the files
+
+Correct answer wont appear- fixed I mispelled option when its supposed to be options.
+
+Finish button won't appear- Fixed the less than equals sign was missing the eqauls. 

@@ -3,14 +3,10 @@ Name of quiz: CodeClash Trivia
 Number of questions at the bottom
 Highlights correct or incorrect answer
 Next Button
-Glassmorphism
 JavaScript Questions
 Number of answers correct at the end
 restart button
-Message based on percentage.
+Message when complete.
 
-Scoring 90-100: Exceptional work! Your score reflects your mastery and dedication. Truly outstanding!
-Scoring 80-89: Remarkable performance! Your score shows a strong grasp of the material and a high level of achievement.
-Scoring 70-79: Great job! Your score reflects a strong foundation. With a bit more practice, you’ll reach new heights!
-Scoring 60-69: Encouraging Progress! Your score shows a promising start. Keep engaging with the material to enhance your understanding.
-Scoring below 60:  Valiant Effort! Your score is a starting point. Embrace this as a chance to learn and improve further.
+Scoring: Exceptional work! Your score reflects your mastery and dedication. Truly outstanding!
+

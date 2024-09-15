@@ -1,9 +1,9 @@
 import React from 'react'
 
 function FooterContent({totalQuestions, dispatch, index}) {
-    if(index < totalQuestions - 1){
+    if(index <= totalQuestions - 1) {
     return (
-        <button className="btn" onClick={()=> dispatch({type: "nextQuestions" })}>
+        <button className="btn" onClick={() => dispatch({ type: "nextQuestions" })}>
         Next</button>
         );
     } 

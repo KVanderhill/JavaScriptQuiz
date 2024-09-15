@@ -15,17 +15,15 @@ function reducer(state, action) {
       
       const question = state.questions.at(state.index);
 
-      return { ...state, answer: action.payload, points: action.payload === question.correctOption
+      return { ...state, answer: action.payload, points: action.payload === question.correctOptions
         ? state.points + question.points : state.points};
-
-
-
+        
     case "nextQuestions" : 
     return { ...state, index: state.index + 1, answer: null };
     case "finishScreen" : 
     return { ...state, status: "finish" };
     case "restart" : 
-    return { ...state, status: "ready", index: 0, answer: null };
+    return { ...state, status: "ready", index: 0, answer: null, points: 0 };
     }
 
 }

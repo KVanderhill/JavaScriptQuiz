@@ -28,7 +28,8 @@ function QuizStart({ dispatch, questions, totalQuestions, index, answer }) {
         <div className="quiz_footer">
             <p>Number of Questions : {index} / {totalQuestions} 
             </p>
-            <FooterContent dispatch={dispatch} 
+            <FooterContent 
+            dispatch={dispatch} 
             index={index} 
             totalQuestions={totalQuestions}/>
             </div>
