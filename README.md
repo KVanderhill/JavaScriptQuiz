@@ -12,7 +12,6 @@ your knowledge to become a great programmer!
 Interactive quiz: Users can answer multiple choice questions.
 Score Tracking: Points are awarded for correct answers.
 Restart Functionality: Users can restart the game.
-&nbsp;
 
-##Play the Game
-Access the game [Here]
+
+
