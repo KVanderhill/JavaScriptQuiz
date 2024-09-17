@@ -9,8 +9,8 @@ your knowledge to become a great programmer!
 &nbsp;
 
 ##Functionality
-Interactive quiz: Users can answer multiple choice questions.
-Score Tracking: Points are awarded for correct answers.
+Interactive quiz: Users can answer multiple choice questions.<br>
+Score Tracking: Points are awarded for correct answers.<br>
 Restart Functionality: Users can restart the game.
 
 
