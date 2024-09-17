@@ -1,6 +1,6 @@
 # Academia Code Trials<br>
 
-This quiz is a web-based game that tests your knowledge in JavaScript.<br>
+This quiz is a web-based game created in react that tests your knowledge in JavaScript.<br>
 Allows users to see what they really know in JavaScript!<br>
 These are beginner friendly questions and will help you further<br>
 your knowledge to become a great programmer!
